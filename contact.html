@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Brang Mai"/>
+    <meta name="description" content="This page displays contact infomation."/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Infomation</title>
+    <style>
+      img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#">Home</a></li>
+        <li><a href="index.html#about-lts">About LTS</a></li>
+        <li><a href="index.html#our-menu">Our Menu</a></li>
+        <li><a href="operation-hours.html#"></a></li>
+      </ul>
+    </nav>
+    <section>
+      <figure>
+        <img src="https://baconmockup.com/640/360" alt="food image" />
+        <figcaption>Little Taco Shop Tacos</figcaption>
+      </figure>
+    </section>
+    <section>
+      <h3>Our Contact Form</h3>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Send Us A Message</legend>
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email" required />
+          </p>
+          <p>
+            Your Message 
+            <br>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here"
+            ></textarea>
+          </p>
+        </fieldset>
+        <br>
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+    <br>
+    <section id="contact-info">
+      <h3>Our Location</h3>
+      <address>
+        123 Taco Street <br>
+        New York, New York 12345
+        USA
+        <p>Phone: <a href="tel:+12345678901">234-567-8901</a></p> 
+      </address>      
+    </section>
+    <hr>
+    <footer>
+      <p><a href="#">Back to Top</a></p>
+      <p><a href="index.html">Back to Home</a></p>
+    </footer>
+  </body>
+</html>
