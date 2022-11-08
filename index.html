@@ -11,7 +11,13 @@
         img {
             width: 300px;
             height: 200px;
-            background-color: lightpink;
+            border: 1px green solid;
+        }
+        table, th, tr, td, caption {
+            border: 1px green solid;
+            border-collapse: collapse;
+            padding: 0.5rem;
+
         }
     </style>
 </head>
@@ -28,7 +34,7 @@
         </ul>
     </nav>
     <figure>
-        <img src="images/picture.png" alt="Restaurant Pictuere">
+        <img src="http://via.placeholder.com/640x360" alt="Image placeholder">
         <figcaption>Tacos and Drinks</figcaption>
     </figure>
     <hr>
@@ -48,10 +54,62 @@
                 (Source: <em><a href="https://www.smithsonianmag.com/">Smithsonian Magazine</a></em>)
             </p>
         </details>
-       
+        <hr>       
     </section>
-    
+    <section id="our-menu">
+        <table>
+            <caption>Our Tacos</caption>            
+            <thead>
+                <tr>
+                    <th>Tacos</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4">Crunchy</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>$1.50</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>$2.50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>$3.25</td>
+                </tr>
+                <tr>
+                    <th rowspan="4">Soft</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>$3.50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>$4.50</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="3">Chips & Salsa $2</td></tr>
+            </tfoot>
 
-    
+        </table>
+    </section>
+    <footer>
+        <p><a href="#">Back to Top</a></p>
+        <hr>
+        <p>
+            Copyright &copy; The Little Taco Shop
+        </p>
+    </footer>    
 </body>
 </html>
