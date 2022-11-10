@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Brang Mai">
+    <meta name="description" content="The page provides the shop opearation hours.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        header {
+            background-color: rgb(231, 36, 14);
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .food-image {
+            background-color: rgb(210, 255, 191);
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        figure {
+            text-align: center;
+            padding-top: 40px;
+        }
+        img {
+            border-style: none;
+            border-radius: 6px;
+        }
+        .operation-hours {
+            text-align: center;
+            font-size: 20px;
+            line-height: 50px;
+        }
+        .nav-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 25px 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <p class="hours-title">Operation Hours</p> -->
+        <nav>
+            <button><a href="index.html#">Home</a></button>
+            <button><a href="index.html#about-lts">About LTS</a></button>
+            <button><a href="index.html#our-menu">Our Menu</a></button>
+            <button><a href="index.html#contact-us">Contact Us</a></button>
+        </nav>       
+    </header>    
+    <br>
+    <div class="food-image">
+        <figure>
+            <img src="images/taco.jpeg" alt="Piture Placeholder">
+            <figcaption>A Tray of Tasty Tacos</figcaption>
+        </figure>
+        <figure>
+            <img src="images/taco2.jpeg" alt="Piture Placeholder">
+            <figcaption>A Tray of Tasty Tacos</figcaption>
+        </figure>
+        <figure>
+            <img src="images/taco3.jpeg" alt="Piture Placeholder">
+            <figcaption>A Tray of Tasty Tacos</figcaption>
+        </figure>
+    </div>
+    <hr>
+    <div class="operation-hours">
+        <p><strong> We are open 7 days a week!</strong></p>
+        <dl>
+            <dt>Sunday-Thursday</dt>
+            <dd>11am-9pm</dd>
+            <dt>Friday-Saturday</dt>
+            <dd>11am-11pm</dd>
+        </dl>
+    </div> 
+    <hr>
+    <footer>
+        <div class="nav-bottom">
+            <button><a href="#">Back to Top</a></button>
+            <button><a href="index.html">Back to Home</a></button>
+        </div>
+        
+        <hr>
+        <p>Copyright &copy; The Little Tacos Shop</p>
+    </footer>   
+</body>
+</html>

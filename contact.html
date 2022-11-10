@@ -7,72 +7,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Contact Infomation</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
       img {
-        width: 300px;
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
       }
+      header {
+        background-color: rgb(231, 36, 14);
+        height: 30px;
+        text-align: center;
+        padding-top: 4px;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+      }
+      button {
+        background-color: rgb(240, 236, 234);
+        cursor: pointer;
+      }
+      a {
+        color: rgb(216, 0, 0);
+        font-size: 18px;
+      }
+      button:hover {
+        border: 1px rgb(9, 102, 189) solid;
+        background-color: rgb(240, 236, 234);
+        border-radius: 16px;
+      }
+      /* main {
+        background-color: lightpink;
+        margin-top: 50px;
+      } */
+      figure {
+        text-align: center;
+        object-fit: cover;
+        margin-top: 25px;
+      }
+      img {
+        border-style: none;
+        border-radius: 4px;
+      }
+      address {
+        margin-top: 20px;
+        text-align: start;
+        line-height: 25px;
+        margin-left: 50px;
+        padding-left: 25px;
+      }
+      #message-area {
+        background-color: rgb(236, 221, 221);
+      }
+      h3 {
+        width: 600px;
+        padding-left: 25px;
+        margin-left: 50px;
+        padding-top: 20px;
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
+      form {
+        width: 600px;
+        padding: 25px 25px;
+        margin-left: 50px;
+      }
+      form button {
+        background-color: rgb(9, 102, 189);
+        color: white;
+        }
+      button:hover {
+          background-color: white;
+        }
+      button:active {
+          opacity: 0.4;
+        }
+      .nav-bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 25px 50px;
+      }      
     </style>
   </head>
   <body>
-    <h1>Contact Us</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html#">Home</a></li>
-        <li><a href="index.html#about-lts">About LTS</a></li>
-        <li><a href="index.html#our-menu">Our Menu</a></li>
-        <li><a href="operation-hours.html#"></a></li>
-      </ul>
-    </nav>
-    <section>
-      <figure>
-        <img src="https://baconmockup.com/640/360" alt="food image" />
-        <figcaption>Little Taco Shop Tacos</figcaption>
-      </figure>
-    </section>
-    <section>
-      <h3>Our Contact Form</h3>
-      <form action="https://httpbin.org/get" method="get">
-        <fieldset>
-          <legend>Send Us A Message</legend>
-          <p>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required />
-          </p>
-          <p>
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" placeholder="Enter your email" required />
-          </p>
-          <p>
-            Your Message 
-            <br>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Type your message here"
-            ></textarea>
-          </p>
-        </fieldset>
-        <br>
-        <button type="submit">Send</button>
-        <button type="reset">Reset</button>
-      </form>
-    </section>
+    <header>
+      <h1>Little Taco Shop Contact Information</h1>
+      <nav>
+        <button><a href="index.html#">Home</a></button>
+        <button><a href="index.html#our-menu">Our Menu</a></button>
+        <button><a href="operation-hours.html#">Store Hours</a></button>
+        <button><a href="index.html#about-lts">About LTS</a></button>
+      </nav>
+    </header>
     <br>
-    <section id="contact-info">
-      <h3>Our Location</h3>
-      <address>
-        123 Taco Street <br>
-        New York, New York 12345
-        USA
-        <p>Phone: <a href="tel:+12345678901">234-567-8901</a></p> 
-      </address>      
-    </section>
     <hr>
+    <main>
+      <section id="image-section">
+        <figure>
+          <img src="https://baconmockup.com/640/360" alt="food image" />
+          <figcaption>Little Taco Shop Tacos</figcaption>
+        </figure>
+      </section>
+      <section id="contact-info">
+        <h3>Our Location</h3>
+        <address>
+          123 Taco Street <br>
+          New York, New York 12345<br>
+          USA
+          <p>
+            Phone: <a href="tel:+12345678901">234-567-8901</a><br>
+            Email: <a href="mailto:lts@littletacoshop.com">lts@littletacoshop.com</a>
+          </p> 
+        </address>      
+      </section>
+      <section id="message-area">
+        <h3>Our Contact Form</h3>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Send Us A Message</legend>
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" placeholder="Enter your name" required />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" placeholder="Enter your email" required />
+            </p>
+            <p>
+              Your Message 
+              <br>
+              <textarea
+                name="message"
+                id="message"
+                cols="50"
+                rows="10"
+                placeholder="Type your message here"
+              ></textarea>
+            </p>
+          </fieldset>
+          <br>
+          <button type="submit">Send</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+    </main>
     <footer>
-      <p><a href="#">Back to Top</a></p>
-      <p><a href="index.html">Back to Home</a></p>
-    </footer>
+      <div class="nav-bottom">
+          <button><a href="#">Back to Top</a></button>
+      </div>      
+      <hr>
+      <p>Copyright &copy; The Little Tacos Shop</p>
+    </footer>   
   </body>
 </html>

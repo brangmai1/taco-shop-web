@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(240, 236, 234);
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    width: 300px;
+    height: 200px;
+    border-style: none;
+    border-radius: 6px;
+}
+table, th, tr, td, caption {
+    border: 1px green solid;
+    border-collapse: collapse;
+    padding: 0.5rem;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1 {
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: white;
+}
+nav {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+}
+button {
+    width: 125px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-style: none;
+    border-radius: 6px;
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+    }
+button:hover {
+    background-color: white;
+}
+button:active {
+    opacity: 0.4;
+}
